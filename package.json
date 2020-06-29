@@ -1,0 +1,14 @@
+{
+  "name": "gps-shifter",
+  "version": "0.1.0",
+  "description": "The JavaScript version of GPS shifting calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gps"
+  ],
+  "author": "gangmax",
+  "license": "MIT"
+}
