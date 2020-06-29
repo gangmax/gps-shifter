@@ -10,5 +10,13 @@
     "gps"
   ],
   "author": "gangmax",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gangmax/gps-shifter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gangmax/gps-shifter/issues"
+  },
+  "homepage": "https://github.com/gangmax/gps-shifter#readme"
 }
