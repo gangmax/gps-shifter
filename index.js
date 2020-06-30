@@ -4,7 +4,7 @@
  *   https://on4wp7.codeplex.com/SourceControl/changeset/view/21483#353936
  *   https://blog.csdn.net/coolypf/article/details/8686588
  */
-'use strict'
+'use strict';
 
 /*
  * Krasovsky 1940
@@ -46,7 +46,7 @@ function transformLng(x, y) {
 
 function shift(rawLat, rawLng) {
     if(isOutOfWonderland(rawLat, rawLng)) {
-        return {'lat': rawLat, 'lng': rawLng};
+        return {lat: rawLat, lng: rawLng};
     }
     let dLat = transformLat(rawLng - 105.0, rawLat - 35.0);
     let dLng = transformLng(rawLng - 105.0, rawLat - 35.0);
@@ -58,14 +58,14 @@ function shift(rawLat, rawLng) {
     dLng = (dLng * 180.0) / (a / sqrtMagic * cos(radLat) * pi);
     let targetLat = rawLat + dLat;
     let targetLng = rawLng + dLng;
-    return {'lat': targetLat, 'lng': targetLng};
+    return {lat: targetLat, lng: targetLng};
 }
 
 function unshift(shiftedLat, shiftedLng) {
     let r = shift(shiftedLat, shiftedLng);
     let dLat = r.lat - shiftedLat;
     let dLng = r.lng - shiftedLng;
-    return {'lat': shiftedLat - dLat, 'lng': shiftedLng - dLng};
+    return {lat: shiftedLat - dLat, lng: shiftedLng - dLng};
 }
 
 module.exports = {

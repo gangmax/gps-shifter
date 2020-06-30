@@ -1,6 +1,6 @@
-This is a JavaScript port of the original [Python version](https://github.com/scateu/PyWGS84ToGCJ02).
+This program is a JavaScript port of the original [Python](https://github.com/scateu/PyWGS84ToGCJ02/blob/master/WGS84ToGCJ02.py) version.
 
-The program is used to solve this GPS shifting [issue](https://www.serviceobjects.com/blog/why-gps-coordinates-look-wrong-on-maps-of-china/). More details of this issue can be found [here](https://en.wikipedia.org/wiki/Restrictions_on_geographic_data_in_China).
+This program is used to solve the GPS shifting [issue](https://www.serviceobjects.com/blog/why-gps-coordinates-look-wrong-on-maps-of-china/). More details of this issue can be found [here](https://en.wikipedia.org/wiki/Restrictions_on_geographic_data_in_China).
 
 Install this package:
 
@@ -9,7 +9,6 @@ npm install gps-shifter
 ```
 
 How to use:
-
 
 ```js
 const gps = require('gps-shifter');
